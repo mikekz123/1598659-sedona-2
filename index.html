@@ -7,10 +7,12 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <img class="logo" src="#" alt="Логотип города Седона">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="#" alt="Логотип города Седона">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -36,7 +38,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-index">
       <div class="modal-search-box">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="search-title-form">Поиск гостиницы в Седоне</h2>
@@ -45,37 +47,37 @@
           </button>
           <p class="arrival-date-form">
             <label class="label-form" for="search-arrival-date">Дата Заезда:
-              <input type="date" id="search-arrival-date" name="search-arrival-date" required>
-              <span class="message-input error-message">Мы не можем отправить вас в прошлое.</span>
+            <input type="date" id="search-arrival-date" name="search-arrival-date" required>
+            <span class="message-input error-message">Мы не можем отправить вас в прошлое.</span>
             </label>
           </p>
           <p class="departure-date-form">
             <label class="label-form" for="search-departure-date">Дата Выезда:
-              <input type="date" id="search-departure-date" name="search-departure-date" required>
-              <span class="message-input">На эти даты есть свободные номера. Пока есть.</span>
+            <input type="date" id="search-departure-date" name="search-departure-date" required>
+            <span class="message-input">На эти даты есть свободные номера. Пока есть.</span>
             </label>
           </p>
-          <p class="quantity-adults-form" for="quantity-adults">
-            <label class="label-form">Взрослые:
-              <button type="button" class="button-decrease">
-                <span class="visually-hidden">Уменьшить значение</span>
-              </button>
-              <input type="number" id="quantity-adults" name="quantity-adults" value="2" min="1" max="10" step="1">
-              <button type="button" class="button-increase">
-                <span class="visually-hidden">Увеличить значение</span>
-              </button>
-            </label>
-          </p>
-          <p class="quantity-children-form" for="quantity-children">
-          <label class="label-form">Дети:
+          <p class="quantity-adults-form">
             <button type="button" class="button-decrease">
               <span class="visually-hidden">Уменьшить значение</span>
             </button>
-            <input type="number" id="quantity-children" name="quantity-children" value="2" min="0" max="10" step="1">
+            <label class="label-form" for="quantity-adults">Взрослые:
+              <input type="number" id="quantity-adults" name="quantity-adults" value="2" min="1" max="10" step="1">
+            </label>
             <button type="button" class="button-increase">
               <span class="visually-hidden">Увеличить значение</span>
             </button>
+          </p>
+          <p class="quantity-children-form">
+          <button type="button" class="button-decrease">
+            <span class="visually-hidden">Уменьшить значение</span>
+          </button>
+          <label class="label-form" for="quantity-children">Дети:
+            <input type="number" id="quantity-children" name="quantity-children" value="2" min="0" max="10" step="1">
           </label>
+          <button type="button" class="button-increase">
+            <span class="visually-hidden">Увеличить значение</span>
+          </button>
           </p>
           <button class="button seacrh-button-form" type="submit">Найти</button>
         </form>
@@ -142,8 +144,9 @@
         </form>
       </section>
     </main>
-    <footer>
-      <section class="footer-social">
+    <footer class="page-footer">
+      <section class="footer-content">
+        <h2 class="visually-hidden">Соиальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
@@ -161,10 +164,13 @@
             </a>
           </li>
         </ul>
-        <address class="footer-contacts">
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <div class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contacts">
+            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+        </div>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </section>
     </footer>
   </body>

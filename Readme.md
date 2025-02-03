@@ -2,7 +2,7 @@
 
 * Студент: [Владимир](https://up.htmlacademy.ru/htmlcss-individual/2/user/1598659).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт: [Проект Седона](https://mikekz123.github.io/1598659-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

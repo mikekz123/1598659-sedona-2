@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="header">
@@ -44,13 +45,13 @@
       <h1 class="visually-hidden">Город Седона</h1>
       <img class="intro-logo" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
-    <section class="section city-description">
+    <section class="section">
       <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="section-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      <ul class="list">
+      <ul class="list-cause">
         <li class="list-item">
-          <h3 class="list-title">Настоящий городок</h3>
-          <p class="list-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <h3 class="list-title light-title">Настоящий городок</h3>
+          <p class="list-description light-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <img class="list-image" src="images/photo-1.jpg" width="800" height="385" alt="Седона, Аризона - край рыжих скал">
         </li>
         <li class="list-item">
@@ -66,16 +67,16 @@
           <p class="list-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="list-item">
-          <h3 class="list-title">Там есть мост дьявола</h3>
-          <p class="list-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <h3 class="list-title light-title">Там есть мост дьявола</h3>
+          <p class="list-description light-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           <img class="list-image" src="images/photo-2.jpg" width="800" height="385" alt="Живописный пейзаж Седоны с красными скалами и каньоном, Мост дьявола">
         </li>
       </ul>
     </section>
-    <section class="section advantages">
+    <section class="section">
       <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
       <p class="section-description">Опытный персонал и качественное обслуживание!</p>
-      <ul class="list">
+      <ul class="list-advantages">
         <li class="list-item">
           <h3 class="list-title">Жильё</h3>
           <p class="list-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -90,15 +91,15 @@
         </li>
       </ul>
     </section>
-    <section class="section interest">
+    <section class="section">
       <h2 class="section-title">Заинтересовались?</h2>
       <p class="section-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button button-search-hotel" type="button">Поиск гостиницы в Седоне</button>
+      <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
     </section>
-    <section class="section-subscribe subscribe-background">
-      <h2 class="section-title">Подпишитесь на рассылку</h2>
+    <section class="section subscribe">
+      <h2 class="section-title light-title">Подпишитесь на рассылку</h2>
       <form class="form-subscribe" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="form-description light-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <label class="form-label-subscribe" for="subscribe-email">Ваш e-mail</label>
         <input class="form-field" placeholder="example@mail.ru" type="email" id="subscribe-email" name="subscribe-email" required>
         <button class="button button-subscribe" type="submit">Подписаться</button>

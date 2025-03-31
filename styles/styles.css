@@ -177,7 +177,6 @@ body {
 }
 
 .contacts-phone {
-  font-family: inherit;
   font-style: normal;
   color: #000000;
   font-weight: 400;
@@ -301,4 +300,13 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+}
+
+.input-number {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #F2F2F2;
 }
